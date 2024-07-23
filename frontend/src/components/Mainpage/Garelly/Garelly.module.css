@@ -1,0 +1,18 @@
+.SlideShow {
+    width: 100%;
+    margin: auto;
+    max-height: 600px;
+    height: auto;
+}
+
+.each-slide-effect {
+    display: flex;
+    align-items: center;
+}
+.eachSlide{
+    width: 100%;
+    height: 900px;
+    max-height: 600px;
+    background-size: cover;
+    background-position: center;
+}

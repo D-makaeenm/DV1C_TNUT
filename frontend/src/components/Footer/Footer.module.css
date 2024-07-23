@@ -1,0 +1,65 @@
+.footer{
+    background-color: #7bc6ed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.footer-map iframe{
+    border: none;
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+.footer-map iframe:hover{
+    transform: scale(1.05);
+}
+.infor-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.infor-container p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.infor-container p:first-child {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.infor-container p:nth-child(2) {
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+}
+.Linkhref{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.Linkhref a{
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #000000;
+}
+.Linkhref a:hover{
+    transform: translateY(-5px);
+}
+.facebook:hover{
+    color: #005aff;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.youtube:hover{
+    color:red;
+}
+.twitter:hover{
+    color: #00a7ff;
+}

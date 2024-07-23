@@ -1,0 +1,61 @@
+.Gif-container {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    height: 474.75px;
+}
+
+.Gif-container img {
+    width: 100%;
+    filter: grayscale(90%);
+}
+
+.Gif-container-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+
+}
+.Headtitle{
+    margin-top: 0;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.Gif-container-item p{
+    color: white;
+}
+.Gif-container-item-button{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+.Gif-container-item-button div{
+    justify-content: center;
+    text-align: center;
+    width: 230px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.Gif-container-item-button div:hover{
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 474.75px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: linear-gradient(to right, blue, #2828c6, #3939a6, #454571, #3c3c50, #322828FF, black);
+    opacity: 0.2;
+}
