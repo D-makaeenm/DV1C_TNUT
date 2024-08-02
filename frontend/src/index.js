@@ -1,21 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./components/Mainpage/Mainpage";
+import LoginedPage from "./components/Logined/LoginedPage";
+import components from "./components/Logined/FunctionPage/component";
+import { items } from "./components/Logined/data";
+import Form from "./components/Logined/Example_Form/Form";
+import LoginPage from "./components/LoginPage/LoginPage";
+
+const AppContent = () => {
+    const location = useLocation();
+    const showNavAndFooter = location.pathname !== '/login';
+
+    return (
+        <>
+            {showNavAndFooter && <Navigation />}
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/home" element={<LoginedPage />}>
+                    {items.map((item, index) => (
+                        <Route
+                            key={index}
+                            path={item.link.slice(1)}
+                            element={React.createElement(components[index + 1])}
+                        />
+                    ))}
+                    <Route path="bieu-mau" element={<Form />} />
+                </Route>
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+            {showNavAndFooter && <Footer />}
+        </>
+    );
+}
+
+const App = () => {
+    return (
+        <Router>
+            <AppContent />
+        </Router>
+    );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-      <Navigation/>
-      <MainPage/>
-      <Footer />
-  </React.StrictMode>
-);
+root.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

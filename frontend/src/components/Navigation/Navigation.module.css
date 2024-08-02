@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     resize: horizontal;
-    background-color: rgba(77, 162, 205, 0.7);
+    background-color: #55c5d1;
     height: 70px;
 }
 .nav-bar img{

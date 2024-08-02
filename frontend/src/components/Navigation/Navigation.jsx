@@ -1,13 +1,18 @@
-import styles from "./Navigation.module.css"
+// Navigation.jsx
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from "./Navigation.module.css";
 import Logo from "./Logo";
 
-const Navigation = () =>{
+const Navigation = () => {
+    const navigate = useNavigate();
+
     const loginClick = () => {
-        alert("Clicked!");
+        navigate('/login');
     }
-    return(
+    return (
         <div className={styles['nav-bar']}>
-            <Logo/>
+            <Logo />
             <div className={styles['title-p']}>
                 <p className={styles.p1}>TRƯỜNG ĐẠI HỌC</p>
                 <p className={styles.p2}>KỸ THUẬT CÔNG NGHIỆP THÁI NGUYÊN</p>
@@ -18,6 +23,5 @@ const Navigation = () =>{
         </div>
     );
 }
-
 
 export default Navigation;

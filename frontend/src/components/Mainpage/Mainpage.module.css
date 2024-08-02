@@ -64,4 +64,11 @@
     background-color: aliceblue;
     text-align: center;
     align-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#fff, rgba(255,255,255,0.2)), url("https://wallpapercave.com/wp/wp7459883.jpg");
+}
+.title{
+    font-size: 25px;
+    font-family: Pacifico, sans-serif;
 }

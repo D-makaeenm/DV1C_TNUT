@@ -30,12 +30,12 @@ const Footer = () => {
                 <small>Copyright © 2020 Trường Đại Học Kỹ thuật Công nghiệp</small>
             </div>
             <div className={styles.Linkhref}>
-                <a className={styles.facebook} onClick={FBClick} href="#"><i
+                <a className={styles.facebook} onClick={FBClick} href="w"><i
                     className="fa-brands fa-square-facebook"></i></a>
-                <a className={styles.instagram} onClick={INClick} href="#"><i
+                <a className={styles.instagram} onClick={INClick} href="w"><i
                     className="fa-brands fa-square-instagram"></i></a>
-                <a className={styles.youtube} onClick={YTClick} href="#"><i className="fa-brands fa-youtube"></i></a>
-                <a className={styles.twitter} onClick={TWClick} href="#"><i className="fa-brands fa-square-twitter"></i></a>
+                <a className={styles.youtube} onClick={YTClick} href="w"><i className="fa-brands fa-youtube"></i></a>
+                <a className={styles.twitter} onClick={TWClick} href="w"><i className="fa-brands fa-square-twitter"></i></a>
             </div>
             <div className={styles['footer-map']}>
                 <iframe

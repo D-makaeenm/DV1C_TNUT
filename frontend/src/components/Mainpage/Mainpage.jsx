@@ -5,6 +5,9 @@ import CardOpcr from "./Card/card-opcr";
 import GifUnlogin from "./GifUnlogin/Gif";
 import BG from "../Background/background";
 import Status from "./Status/status";
+import Garelly from "./Garelly/Garelly";
+
+
 const MainPage = () => {
     const [paragraphs] = useState([
         'Về chúng tôi',
@@ -36,7 +39,8 @@ const MainPage = () => {
             <BG />
             <Status />
             <div className={styles["students-feedback"]}>
-                sinh vien noi gi ve chung toi
+                <p className={styles["title"]}>Sinh viên nói gì về chúng tôi</p>
+                <Garelly/>
             </div>
         </div>
     );

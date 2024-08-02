@@ -18,13 +18,13 @@
 .status-item p{
     margin: 0;
 }
-.status-item p1{
+.p1{
     margin-top: 5px;
     font-size: 40px;
     font-weight: bold;
     font-family: Montserrat, sans-serif;
 }
-.status-item p2{
+.p2{
     font-size: 25px;
     font-family: Montserrat, sans-serif;
 }

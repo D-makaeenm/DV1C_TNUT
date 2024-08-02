@@ -1,5 +1,5 @@
 .Card-opcr{
-    background-color: #a3d5ef;
+    background-color: #8adfe3;
     height: auto;
 }
 .opcr-content{
@@ -9,7 +9,7 @@
     padding-bottom: 20px;
 }
 .content-item{
-    background-color: #7ac74f;
+    background-color: #ffd574;
     width: 30%;
     margin: 10px;
     text-align: center;
@@ -22,7 +22,7 @@
     position: relative;
 }
 .content-item:hover{
-    background-color: #edb67e;
+    background-color: #f79c65;
     border-color: #008bf8;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     transform: translateY(-10px);
@@ -36,13 +36,13 @@
     text-align: center;
     font-family: Pacifico, sans-serif;
     font-size: 30px;
-    color: red;
+    color: #fc8476;
     padding-top: 20px;
 }
 .icon-item{
     font-size: 30px;
     margin-bottom: 0;
-    color: #ff0000;
+    color: #fc8476;
     margin-top: 20px;
 }
 .title-item{
@@ -58,7 +58,7 @@
     width: 60%;
     border-radius: 1rem;
     border: none;
-    background-color: #008bf8;
+    background-color: #4699c2;
     color: #fff;
     font-size: 1rem;
     padding: .5rem 1rem;
