@@ -1,0 +1,70 @@
+.nav-bar{
+    align-items: center;
+    display: flex;
+    resize: horizontal;
+    background-color: #55c5d1;
+    height: 70px;
+}
+.nav-bar img{
+    width: 65px;
+    height: 65px;
+    margin: auto 0 auto 10px;
+    cursor: pointer;
+}
+.title-p{
+    margin-left: 10px;
+}
+.p1{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+.p2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+.container button{
+    font-size: 0.9em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #293447;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+}
+.container {
+    position: relative;
+    padding: 3px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    border-radius: 0.9em;
+    transition: all 0.4s ease;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0.9em;
+    z-index: -10;
+    filter: blur(0);
+    transition: filter 0.4s ease;
+}
+
+.container:hover::before {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    filter: blur(1.2em);
+}
+.container:active::before {
+    filter: blur(0.2em);
+}

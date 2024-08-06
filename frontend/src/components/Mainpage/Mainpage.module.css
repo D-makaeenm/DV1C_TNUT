@@ -1,0 +1,74 @@
+.About-Myself {
+    background-color: white;
+    padding: 60px 105px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.col p:first-child {
+    text-align: center;
+    font-family: Pacifico, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.col p:last-child {
+    text-align: justify;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+    .About-Myself {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .About-Myself {
+        margin: 0 20px;
+        padding: 40px 0;
+    }
+    .col {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .About-Myself {
+        padding: 20px 0;
+        margin: 0 10px;
+    }
+    .col p:first-child {
+        font-size: 28px;
+    }
+    .col p:last-child {
+        font-size: 14px;
+    }
+}
+.students-feedback{
+    height: 500px;
+    background-color: aliceblue;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#fff, rgba(255,255,255,0.2)), url("https://wallpapercave.com/wp/wp7459883.jpg");
+}
+.title{
+    font-size: 25px;
+    font-family: Pacifico, sans-serif;
+}

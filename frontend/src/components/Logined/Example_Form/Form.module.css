@@ -1,0 +1,12 @@
+.content{
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+}
+ul{
+    margin-left: 40px;
+}
